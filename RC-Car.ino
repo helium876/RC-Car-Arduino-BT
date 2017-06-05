@@ -1,7 +1,5 @@
 /*
  SETUP
- LINK TO APP
- https://play.google.com/store/apps/details?id=braulio.calle.bluetoothRCcontroller
 
  Connections:
  Bluetooth (e.g HC-05)-> Arduino Mega 2560
@@ -88,10 +86,10 @@ void loop(){
     if(command!=prevCommand){
       Serial.println(command);
       switch(command){
-      case 'L':  
+      case 'R':  
         go_Forward(velocity);
         break;
-      case 'R':  
+      case 'L':  
         go_Backwad(velocity);
         break;
       case 'B':  
